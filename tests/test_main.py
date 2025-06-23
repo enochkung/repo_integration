@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
+import selenium
 
 
 def test_main():
@@ -10,4 +11,4 @@ def test_main():
         "html.parser",
     )
 
-    assert True
+    assert "headline" in req.text
