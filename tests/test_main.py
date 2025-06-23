@@ -10,4 +10,4 @@ def test_main():
         "html.parser",
     )
 
-    assert True
+    assert "headline" in req.text
